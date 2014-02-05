@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Siemens Mobile Application</title>
+            <!-- <script src="src/jquery-1.9.0.min.js"></script>
+            <script src="src/jquery.mobile-1.4.0.min.js"></script>
+            <link rel="stylesheet" href="src/jquery.mobile-1.4.0.min.css"> -->
+            <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+            <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
+            <style>
+                /* Hide the number input */
+                .full-width-slider input {
+                    display: none;
+                }
+                .full-width-slider .ui-slider-track {
+                    margin-left: 15px;
+                }
+            </style>
+        </head>
+        <body>
+            <div data-role="page">
+                <div data-role="header"></div>
+                <div data-role="content">
+                    <form>
+                        <label for="flip-checkbox">Light 1 :</label>
+                        <input type="checkbox" data-role="flipswitch" name="flip-checkbox" id="flip-checkbox">
+                    </form>
+                    <form>
+                        <label for="flip-checkbox">Light 2 :</label>
+                        <input type="checkbox" data-role="flipswitch" name="flip-checkbox" id="flip-checkbox">
+                    </form>
+                    </br>
+                    <label for="flip-checkbox">Stepper Motor :</label>
+                    <form class="full-width-slider">
+                        <label for="slider-12" class="ui-hidden-accessible">Stepper Motor:</label>
+                        <input type="range" name="slider-12" id="slider-12" min="0" max="100" value="50">
+                    </form>
+                </div>
+                <!-- <div data-role="footer"></div> -->
+            </div>
+        </body>
+    </html>
